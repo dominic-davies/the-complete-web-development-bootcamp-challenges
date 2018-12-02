@@ -13,29 +13,38 @@
       }
 
       .box {
-        height: 100px;
-        width: 100px;
+        color: #fff;
+        height: 300px;
+        position: absolute;
+        width: 300px;
       }
 
       .blue {
         background-color: blue;
+        left: 300px;
+        top: 300px;
       }
 
       .yellow {
         background-color: yellow;
+        color: #000;
       }
       .red {
         background-color: red;
+        left: 600px;
+        top: 600px;
       }
     </style>
   </head>
   <body>
     <body>
-      <div class="red box"></div>
+      <div class="red box"><p>left: 600px; top: 600px;</p></div>
 
-      <div class="blue box"></div>
+      <div class="blue box"><p>left: 300px; top: 300px;</p></div>
 
-      <div class="yellow box"></div>
+      <div class="yellow box">
+        <p>position: absolute; moved up automatically</p>
+      </div>
     </body>
   </body>
 </html>
