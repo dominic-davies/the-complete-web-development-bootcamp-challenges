@@ -11,28 +11,272 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <style></style>
   </head>
   <body>
-
+    <!-- jumbotron -->
     <div class="jumbotron">
       <div class="container">
         <h1 class="display-4">Bootstrap Grid Notes- Lecture 64</h1>
-        <p class="lead">Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</p>
-        <hr class="my-4">
+        <p class="lead">
+          Components and options for laying out your Bootstrap project,
+          including wrapping containers, a powerful grid system, a flexible
+          media object, and responsive utility classes.
+        </p>
+        <hr class="my-4" />
         <p>This is the structure bootstrap wants us to use - so follow it!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Inactive, sorry</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+          >Inactive, sorry</a
+        >
       </div>
     </div>
+    <!-- /.jumbotron -->
+
     <div class="container">
       <h1 class="bd-title" id="content"></h1>
-      <p class="bd-lead">Navbar examples </p>
 
-      <h2>After adding basic classes and extra links the nav items will appear vertically. </h2>
+      <h2>Grid system</h2>
 
-    
+      <p>
+        Use our powerful mobile-first flexbox grid to build layouts of all
+        shapes and sizes thanks to a twelve column system, five default
+        responsive tiers, Sass variables and mixins, and dozens of predefined
+        classes.
+      </p>
+      <p>
+        Bootstrap’s grid system uses a series of containers, rows, and columns
+        to layout and align content. It’s built with flexbox and is fully
+        responsive. Below is an example and an in-depth look at how the grid
+        comes together.
+      </p>
+
+      <section class="example1 text-white mt-4">
+        <h2 class="text-dark text-center">
+          Using col without splitting into columns
+        </h2>
+        <div class="row">
+          <div class="col" style="background-color:red; border: 1px solid">
+            <p>
+              Just a col which fills full width of a row or will auto fill if
+              others are added to same row. These won't stack.
+            </p>
+          </div>
+          <div class="col" style="background-color:red; border: 1px solid">
+            <p>
+              Just a col which fills full width of a row or will auto fill if
+              others are added to same row. These won't stack.
+            </p>
+          </div>
+          <!--
+            <div class="col" style="background-color:red; border: 1px solid">
+              <p>
+                Just a col which fills full width of a row or will auto fill if
+                others are added to same row. These won't stack.
+              </p>
+            </div>
+          -->
+        </div>
+      </section>
+
+      <section class="example2 text-white mt-4">
+        <h2 class="text-dark text-center">Using col-6 out of 12 = 1/2</h2>
+        <div class="row">
+          <div class="col-6" style="background-color:green; border: 1px solid">
+            <p>col-6 out of 12 = 1/2</p>
+          </div>
+
+          <div class="col-6" style="background-color:green; border: 1px solid">
+            <p>This will not stack.</p>
+          </div>
+          <!--
+            <div class="col" style="background-color:green; border: 1px solid">
+              <p>
+                Just a col which fills full width of a row or will auto fill if
+                others are added to same row
+              </p>
+            </div>
+          -->
+        </div>
+      </section>
+
+      <section class="example3 text-white mt-4">
+        <h2 class="text-dark text-center">
+          Responsive columns - will adjust to screens
+        </h2>
+        <div class="row">
+          <div
+            class="col-md-6"
+            style="background-color:blue; border: 1px solid"
+          >
+            <p>
+              col-md-6 out of 12 = 1/2. From md and upwards will use 6 cols.
+              Smaller (mobile) will take up full width.
+            </p>
+          </div>
+
+          <div
+            class="col-md-6"
+            style="background-color:blue; border: 1px solid"
+          >
+            <p>This will stack on screens smaller than md</p>
+          </div>
+          <!--
+            <div class="col" style="background-color:green; border: 1px solid">
+              <p>
+                Just a col which fills full width of a row or will auto fill if
+                others are added to same row
+              </p>
+            </div>
+          -->
+        </div>
+      </section>
+
+      <section class="example3 text-white mt-4">
+        <h2 class="text-dark text-center">
+          Responsive columns - 4 blocks on lg. 3 blocks on md. 2 blocks on sm. 1
+          block on xs
+        </h2>
+        <ol class="text-dark">
+          <li>
+            On lg we want 4 columns (4 blocks of 3/12's).Below lg screens will
+            stack 100% width.
+          </li>
+          <li>
+            On md we want 3 columns (3 blocks of 4/12's. on tablets for
+            instance.)
+          </li>
+          <li>on sm we want 2 blocks per row. ( 2 x 6/12's)</li>
+        </ol>
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            style="background-color:purple; border: 1px solid"
+          >
+            <p>
+              col-lg-3 out of 12 = 1/4. Any screen smaller than desktop each
+              will take 100% of the width. Smaller (mobile) will take up full
+              width.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            style="background-color:purple; border: 1px solid"
+          >
+            <p>
+              col-lg-3 out of 12 = 1/4. Any screen smaller than desktop each
+              will take 100% of the width. Smaller (mobile) will take up full
+              width.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            style="background-color:purple; border: 1px solid"
+          >
+            <p>
+              col-lg-3 out of 12 = 1/4. Any screen smaller than desktop each
+              will take 100% of the width. Smaller (mobile) will take up full
+              width.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            style="background-color:purple; border: 1px solid"
+          >
+            <p>
+              col-lg-3 out of 12 = 1/4. Any screen smaller than desktop each
+              will take 100% of the width. Smaller (mobile) will take up full
+              width.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="example text-white mt-4">
+        <h2 class="text-dark text-center">Responsive columns - CHALLENGE.</h2>
+        <ol class="text-dark">
+          <li>On lg we want 6 columns</li>
+          <li>
+            On md we want 4 columns (3 blocks of 4/12's. on tablets for
+            instance.)
+          </li>
+          <li>on sm we want blocks per row. (100% of width)</li>
+        </ol>
+        <div class="row text-dark">
+          <div
+            class="col-lg-2 col-md-3 col-sm-12"
+            style="background-color:pink; border: 1px solid"
+          >
+            <p>
+              CHALLENGE we can leave out col-sm-12. By default all the
+              unspecified col's should take up 100% of width and we have set
+              values on md and above and lg and above. Leaving us with the sm
+              columns unspecified, which will be the default.
+            </p>
+          </div>
+          <div
+            class="col-lg-2 col-md-3 col-sm-12"
+            style="background-color:pink; border: 1px solid"
+          >
+            <p>
+              CHALLENGE we can leave out col-sm-12. By default all the
+              unspecified col's should take up 100% of width and we have set
+              values on md and above and lg and above. Leaving us with the sm
+              columns unspecified, which will be the default.
+            </p>
+          </div>
+          <div
+            class="col-lg-2 col-md-3"
+            style="background-color:pink; border: 1px solid"
+          >
+            <p>
+              CHALLENGE we can leave out col-sm-12. By default all the
+              unspecified col's should take up 100% of width and we have set
+              values on md and above and lg and above. Leaving us with the sm
+              columns unspecified, which will be the default.
+            </p>
+          </div>
+          <div
+            class="col-lg-2 col-md-3"
+            style="background-color:pink; border: 1px solid"
+          >
+            <p>
+              CHALLENGE we can leave out col-sm-12. By default all the
+              unspecified col's should take up 100% of width and we have set
+              values on md and above and lg and above. Leaving us with the sm
+              columns unspecified, which will be the default.
+            </p>
+          </div>
+          <div
+            class="col-lg-2 col-md-3"
+            style="background-color:pink; border: 1px solid"
+          >
+            <p>
+              CHALLENGE we can leave out col-sm-12. By default all the
+              unspecified col's should take up 100% of width and we have set
+              values on md and above and lg and above. Leaving us with the sm
+              columns unspecified, which will be the default.
+            </p>
+          </div>
+          <div
+            class="col-lg-2 col-md-3"
+            style="background-color:pink; border: 1px solid"
+          >
+            <p>
+              CHALLENGE we can leave out col-sm-12. By default all the
+              unspecified col's should take up 100% of width and we have set
+              values on md and above and lg and above. Leaving us with the sm
+              columns unspecified, which will be the default.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <!-- Footer -->
     <footer class="py-3 bg-dark">
-      <p class="m-0 text-center text-white">Copyright &copy; Dominic Davies 2018</p>
+      <p class="m-0 text-center text-white">
+        Copyright &copy; Dominic Davies 2018
+      </p>
     </footer>
     <!-- /.footer -->
 
