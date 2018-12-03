@@ -13,148 +13,99 @@
     />
   </head>
   <body>
-    <!-- nav is like a div (will need content) -->
-    <nav class="navbar">
-      <!-- navbar-nav removed bullet -->
-      <ul class="navbar-nav">
-        <li class="nav-item">Contact</li>
-      </ul>
-    </nav>
+
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-        <h1 class="bd-title" id="content">Navbar notes from official website</h1>
+        <h1 class="bd-title" id="content">Navbar Notes</h1>
         <p class="bd-lead">Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
+
+        <p>This is the structure bootstrap wants us to use - so follow it!</p>
+        <p>After adding basic classes and extra links the nav items will appear vertically. </p>
+
+        <nav class="navbar">
+            <!-- navbar-nav removed bullet -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <!-- nav-link styles the link adding hover style etc. -->
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li>
+          </ul>
+          </nav>
+          
+        
        
+          <h2>Expanding the navbar</h2>
+          <p>You must add navbar-expand-lg class on the very first nav element. So on lg screens the nav will be expanded (horizonal) then on lower sizes (md, sm, xs) nav will be vertical. If you choose navbar-expand-md  it will stay horizonal longer only being vertial on sm and xs.</p>
+          <nav class="navbar navbar-expand-lg">
+              <!-- navbar-nav removed bullet -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <!-- nav-link styles the link adding hover style etc. -->
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+            </ul>
+            </nav>
 
-        <h2 id="how-it-works">How it works</h2>
+          <h2>Adding Style</h2>
 
-<p>Here’s what you need to know before getting started with the navbar:</p>
+          <nav class="navbar navbar-expand-lg">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+            </ul>
+          </nav>
 
-<ul>
-<li>Navbars require a wrapping <code class="highlighter-rouge">.navbar</code> with <code class="highlighter-rouge">.navbar-expand{-sm|-md|-lg|-xl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
-<li>Navbars and their contents are fluid by default. Use <a href="#containers">optional containers</a> to limit their horizontal width.</li>
-<li>Use our <a href="/docs/4.1/utilities/spacing/">spacing</a> and <a href="/docs/4.1/utilities/flex/">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
-<li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
-<li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="/docs/4.1/utilities/display/">display</a> utility class.</li>
-<li>Ensure accessibility by using a <code class="highlighter-rouge">&lt;nav&gt;</code> element or, if using a more generic element such as a <code class="highlighter-rouge">&lt;div&gt;</code>, add a <code class="highlighter-rouge">role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
-</ul>
+        <h2 id="how-it-works">Notes from official website</h2>
 
-<p>Read on for an example and list of supported sub-components.</p>
+        <p>Here’s what you need to know before getting started with the navbar:</p>
 
-<h2 id="supported-content">Supported content</h2>
+        <ul>
+        <li>Navbars require a wrapping <code class="highlighter-rouge">.navbar</code> with <code class="highlighter-rouge">.navbar-expand{-sm|-md|-lg|-xl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
+        <li>Navbars and their contents are fluid by default. Use <a href="#containers">optional containers</a> to limit their horizontal width.</li>
+        <li>Use our <a href="/docs/4.1/utilities/spacing/">spacing</a> and <a href="/docs/4.1/utilities/flex/">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
+        <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
+        <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="/docs/4.1/utilities/display/">display</a> utility class.</li>
+        <li>Ensure accessibility by using a <code class="highlighter-rouge">&lt;nav&gt;</code> element or, if using a more generic element such as a <code class="highlighter-rouge">&lt;div&gt;</code>, add a <code class="highlighter-rouge">role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+        </ul>
 
-<p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p>
+        <p>Read on for an example and list of supported sub-components.</p>
 
-<ul>
-<li><code class="highlighter-rouge">.navbar-brand</code> for your company, product, or project name.</li>
-<li><code class="highlighter-rouge">.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns).</li>
-<li><code class="highlighter-rouge">.navbar-toggler</code> for use with our collapse plugin and other <a href="#responsive-behaviors">navigation toggling</a> behaviors.</li>
-<li><code class="highlighter-rouge">.form-inline</code> for any form controls and actions.</li>
-<li><code class="highlighter-rouge">.navbar-text</code> for adding vertically centered strings of text.</li>
-<li><code class="highlighter-rouge">.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint.</li>
-</ul>
+        <h2 id="supported-content">Supported content</h2>
 
-<p>Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the <code class="highlighter-rouge">lg</code> (large) breakpoint.</p>
+        <p>Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:</p>
 
-<div class="bd-example">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="#">Navbar</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
+        <ul>
+        <li><code class="highlighter-rouge">.navbar-brand</code> for your company, product, or project name.</li>
+        <li><code class="highlighter-rouge">.navbar-nav</code> for a full-height and lightweight navigation (including support for dropdowns).</li>
+        <li><code class="highlighter-rouge">.navbar-toggler</code> for use with our collapse plugin and other <a href="#responsive-behaviors">navigation toggling</a> behaviors.</li>
+        <li><code class="highlighter-rouge">.form-inline</code> for any form controls and actions.</li>
+        <li><code class="highlighter-rouge">.navbar-text</code> for adding vertically centered strings of text.</li>
+        <li><code class="highlighter-rouge">.collapse.navbar-collapse</code> for grouping and hiding navbar contents by a parent breakpoint.</li>
+        </ul>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-  <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</div>
-</nav>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg navbar-light bg-light"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navbar<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbarSupportedContent"</span> <span class="na">aria-controls=</span><span class="s">"navbarSupportedContent"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbarSupportedContent"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(current)<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"navbarDropdown"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        Dropdown
-      <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"navbarDropdown"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/a&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline my-2 my-lg-0"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control mr-sm-2"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Search"</span> <span class="na">aria-label=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-success my-2 my-sm-0"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/form&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
-
-<p>This example uses <a href="/docs/4.1/utilities/colors/">color</a> (<code class="highlighter-rouge">bg-light</code>) and <a href="/docs/4.1/utilities/spacing/">spacing</a> (<code class="highlighter-rouge">my-2</code>, <code class="highlighter-rouge">my-lg-0</code>, <code class="highlighter-rouge">mr-sm-0</code>, <code class="highlighter-rouge">my-sm-0</code>) utility classes.</p>
-
-<h3 id="brand">Brand</h3>
-
-<p>The <code class="highlighter-rouge">.navbar-brand</code> can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.</p>
-
-<div class="bd-example">
-<!-- As a link -->
-<nav class="navbar navbar-light bg-light">
-<a class="navbar-brand" href="#">Navbar</a>
-</nav>
-
-<!-- As a heading -->
-<nav class="navbar navbar-light bg-light">
-<span class="navbar-brand mb-0 h1">Navbar</span>
-</nav>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- As a link --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-light bg-light"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navbar<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
-
-<span class="c">&lt;!-- As a heading --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-light bg-light"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand mb-0 h1"</span><span class="nt">&gt;</span>Navbar<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
     <!-- Optional JavaScript -->
     <script
