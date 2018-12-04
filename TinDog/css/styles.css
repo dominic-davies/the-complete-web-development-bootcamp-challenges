@@ -20,6 +20,15 @@ h1 {
   line-height: 1.5;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  color: #8f8f8f;
+}
+
 /* NAVIGATION BAR */
 
 .navbar {
@@ -59,3 +68,21 @@ h1 {
 }
 
 /* FEATURES SECTION */
+
+#features {
+  padding: 7% 15%;
+}
+
+.feature-box {
+  padding: 5%;
+  text-align: center;
+}
+
+.feature-icons {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icons:hover {
+  color: #ff4c68;
+}
