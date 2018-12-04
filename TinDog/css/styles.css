@@ -1,5 +1,3 @@
-/* font-family: 'Ubuntu', sans-serif; */
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -20,4 +18,26 @@ h1 {
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.5;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+  /* 0 to remove default padding to tindog brand */
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat-Light';
+  font-size: 1.2rem;
 }
