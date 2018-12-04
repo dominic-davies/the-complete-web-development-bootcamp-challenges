@@ -41,3 +41,9 @@ h1 {
   font-family: 'Montserrat-Light';
   font-size: 1.2rem;
 }
+
+/* DOWNLOAD BUTTONS */
+
+.btn-download {
+  margin: 5% 3% 5% 0;
+}
