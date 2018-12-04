@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.5;
 }
@@ -40,6 +40,10 @@ h1 {
 .nav-link {
   font-family: 'Montserrat-Light';
   font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* DOWNLOAD BUTTONS */
