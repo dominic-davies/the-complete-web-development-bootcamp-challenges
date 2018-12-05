@@ -108,3 +108,13 @@ p {
   margin: 20px;
   width: 10%;
 }
+
+#press {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.press-logo {
+  margin: 50px 30px 50px;
+  width: 15%;
+}
