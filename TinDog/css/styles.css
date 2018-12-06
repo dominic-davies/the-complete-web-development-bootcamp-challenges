@@ -94,7 +94,7 @@ p {
   color: #ff4c68;
 }
 
-/* TESTIMONIALS SECTION */
+/* TESTIMONIALS / CAROUSEL SECTION */
 
 #testimonials {
   background-color: #ef8172;
@@ -109,8 +109,15 @@ p {
   width: 10%;
 }
 
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* PRESS / LOGO SECTION */
+
 #press {
-  padding-bottom: 3%;
+  background-color: #f7f7f7;
+  padding-bottom: 1%;
   text-align: center;
 }
 
@@ -119,12 +126,12 @@ p {
   width: 15%;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 /* PRICING SECTION */
 
 #pricing {
-  padding: 100px;
+  padding: 100px 100px 50px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
 }
