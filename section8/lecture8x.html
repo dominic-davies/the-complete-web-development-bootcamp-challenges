@@ -19,7 +19,9 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="display-4">JavaScript- Lecture 8x</h1>
-        <p class="lead"></p>
+        <p class="lead">
+          Very rough and brief notes while learning JavaScript.
+        </p>
         <hr class="my-4" />
         <p></p>
         <a class="btn btn-primary btn-lg" href="#intro-86" role="button"
@@ -63,12 +65,43 @@
 
         <h2>Variables</h2>
         <p>
-          The "quotes" tell JS that it's a string. A string of characters
-          (text).
+          we get the browser to ask prompt('What is your name?'); if we type our
+          name in the alert box - it doesn't get stored and we lose it.
         </p>
-        <p>typeof("Dominic"); JS tells you it's a string data type.</p>
+        <p>We can alert myName -</p>
+        <p>var myName = 'Dominic';</p>
+        <p>alert(myName);</p>
+        <p>So we can ask for your name and save it as a variable.</p>
+        <p>var yourName = prompt("What is your name?");</p>
+        <p>alert("Your name is " + yourName);</p>
       </div>
     </section>
+    <section id="lecture91">
+      <div class="container">
+        <h1 class="bd-title" id="content"></h1>
+
+        <h2>Variable naming (conventions)</h2>
+        <p>
+          You can name your var anything but it should make sense and not be a
+          reserved keyword. You will work with other developers so give
+          meaningful names to your variables.
+        </p>
+        <h3>Some good practices.</h3>
+        <ul>
+          <li>Use meaningful names</li>
+          <li>Can't begin with a number</li>
+          <li>Don't use reserved keywords</li>
+          <li>no spaces</li>
+          <li>
+            can only contain letters, numbers, $ and _. no other symbols are
+            valid so no dashes.
+          </li>
+          <li>use camelCasing.</li>
+        </ul>
+        <p></p>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="py-3 bg-dark">
       <p class="m-0 text-center text-white">
@@ -77,7 +110,13 @@
     </footer>
     <!-- /.footer -->
 
-    <script></script>
+    <script>
+      // prompt('What is your name?');
+      // var myName = 'Dominic';
+      // alert(myName);
+      // var yourName = prompt("What is your name?");
+      // alert("Your name is " + yourName);
+    </script>
 
     <!-- Optional JavaScript -->
     <script
