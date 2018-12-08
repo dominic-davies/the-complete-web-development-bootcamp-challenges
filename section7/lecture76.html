@@ -14,9 +14,17 @@
 
     <style>
       .box {
-        height: 100px;
-        width: 100px;
         border: 1px solid;
+        height: 100px;
+        position: absolute;
+        width: 100px;
+      }
+      .box-example {
+        background-color: pink;
+        border: 1px solid;
+        height: 400px;
+        position: relative;
+        width: 400px;
       }
 
       .red {
@@ -25,10 +33,14 @@
 
       .yellow {
         background-color: yellow;
+        left: 20px;
+        top: 20px;
       }
 
       .blue {
         background-color: blue;
+        left: 40px;
+        top: 40px;
       }
 
       .lecture76 {
@@ -40,16 +52,14 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="display-4">Z-index</h1>
-        <p class="lead">
-          Notes for Bootstrap’s powerful, responsive navigation header, the
-          navbar. Includes support for branding, navigation, and more, including
-          support for our collapse plugin.
-        </p>
+        <p class="lead"></p>
         <hr class="my-4" />
-        <p>This is the structure bootstrap wants us to use - so follow it!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button"
-          >Inactive, sorry</a
-        >
+        <p>More CSS</p>
+        <!--
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Inactive, sorry</a
+          >
+        -->
       </div>
     </div>
 
@@ -64,9 +74,11 @@
         flow of document) you would have the last box blue sitting on top of
         yellow, which is sitting on top of red.
       </p>
-      <div class="box red">red</div>
-      <div class="box yellow">yellow</div>
-      <div class="box blue">blue</div>
+      <div class="box-example">
+        <div class="box red">red</div>
+        <div class="box yellow">yellow</div>
+        <div class="box blue">blue</div>
+      </div>
     </div>
 
     <!-- Footer -->
