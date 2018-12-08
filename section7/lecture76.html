@@ -20,7 +20,8 @@
         width: 100px;
       }
       .box-example,
-      .box-example-2 {
+      .box-example-2,
+      .box-example-3 {
         background-color: pink;
         border: 1px solid;
         height: 400px;
@@ -48,6 +49,30 @@
       .lecture76 {
         padding: 100px;
       }
+
+      .box-example-3 .red {
+        background-color: red;
+        width: 300px;
+        z-index: 2;
+      }
+
+      .box-example-3 .yellow {
+        background-color: yellow;
+        left: 20px;
+        top: 20px;
+        z-index: 3;
+      }
+
+      .box-example-3 .blue {
+        background-color: blue;
+        left: 40px;
+        top: 40px;
+        z-index: 10;
+      }
+
+      .part2 {
+        background-color: #f7f7f7;
+      }
     </style>
   </head>
   <body>
@@ -65,36 +90,63 @@
       </div>
     </div>
 
-    <div class="container lecture76">
-      <p>
-        You can nest items to show them on top of another item. "children sit on
-        top of their parent element".
-      </p>
-      <p>
-        elements coded higher up the html document are further back while
-        elements below are further forward. If we made boxes absolute (out of
-        flow of document) you would have the last box blue sitting on top of
-        yellow, which is sitting on top of red.
-      </p>
-      <div class="box-example">
-        <div class="box red">red</div>
-        <div class="box yellow">yellow</div>
-        <div class="box blue">blue</div>
+    <section class="lecture76 part1">
+      <div class="container">
+        <p>
+          You can nest items to show them on top of another item. "children sit
+          on top of their parent element".
+        </p>
+        <p>
+          elements coded higher up the html document are further back while
+          elements below are further forward. If we made boxes absolute (out of
+          flow of document) you would have the last box blue sitting on top of
+          yellow, which is sitting on top of red.
+        </p>
+        <div class="box-example">
+          <div class="box red">red</div>
+          <div class="box yellow">yellow</div>
+          <div class="box blue">blue</div>
+        </div>
       </div>
-      <h2>
-        (bad practice) changing stacking order by moving the html elements
-      </h2>
-      <p>
-        With the position of the colored boxes set, we can now move the blue div
-        above the yellow div in the markup. So it's red, blue then yellow. So
-        yellow shows on top.
-      </p>
-      <div class="box-example-2">
-        <div class="box red">red</div>
-        <div class="box blue">blue</div>
-        <div class="box yellow">yellow</div>
+    </section>
+
+    <section class="lecture76 part2">
+      <div class="container">
+        <h2>
+          (bad practice) changing stacking order by moving the html elements
+        </h2>
+        <p>
+          With the position of the colored boxes set, we can now move the blue
+          div above the yellow div in the markup. So it's red, blue then yellow.
+          So yellow shows on top.
+        </p>
+        <div class="box-example-2">
+          <div class="box red">red</div>
+          <div class="box blue">blue</div>
+          <div class="box yellow">yellow</div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="lecture76 part3">
+      <div class="container">
+        <h2>
+          (Best Practise) Z-index only works if elements are positioned like
+          relative, absolute and fixed.
+        </h2>
+        <p>
+          Default for all elements is z-index: 0 (static). 1 shows above other
+          elements, -1 shows behind elements. Here I have blue 10, yellow 3, red
+          2.
+        </p>
+
+        <div class="box-example-3">
+          <div class="box red">red</div>
+          <div class="box yellow">yellow</div>
+          <div class="box blue">blue</div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="py-3 bg-dark">
