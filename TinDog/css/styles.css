@@ -141,6 +141,17 @@ p {
   padding: 3% 2%;
 }
 
+footer {
+  background-color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  margin-left: 18px;
+}
+
 /* MEDIA QUERIES */
 
 /* Large devices (desktops, 992px and down) */
