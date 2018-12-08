@@ -12,7 +12,15 @@
       crossorigin="anonymous"
     />
 
-    <style></style>
+    <style>
+      .lecture77 {
+        padding: 0 0 100px;
+      }
+
+      hr {
+        padding-bottom: 30px;
+      }
+    </style>
   </head>
   <body>
     <div class="jumbotron">
@@ -31,14 +39,44 @@
 
     <section class="lecture77 part1">
       <div class="container">
-        <p>.</p>
-        <p></p>
+        <h2>Make it responsive.</h2>
+        <p>
+          You can do nothing and design a website desktop only but you will be
+          penalised by Google etc.. especially as most people browse when on
+          mobile. A giant company like facebook can do mobile site as well
+          (m.facebook.com) but not feasable for most.So make responsive
+          websites.
+        </p>
+        <p>Can do this using css only: Media Query Breakpoints.</p>
+        <h3>Syntax.</h3>
+        <p>@media (type) (feature)</p>
+        <p>many types like screen, print, speech.</p>
+        <p>
+          for screen type we are checking to see what size screen the site is
+          being rendered in.
+        </p>
+        <p>@media screen (min-width: 900px) then change something.</p>
+        <p>
+          We override the existing code when screen size is 900px and higher.
+        </p>
+        <h3>viewports</h3>
+        <p>
+          You have device width (fixed), browser size which we can change. The
+          viewport is simply the size of the screen your website is being
+          displayed on.
+        </p>
       </div>
     </section>
-
+    <hr />
     <section class="lecture77 part2">
       <div class="container">
-        <h2></h2>
+        <h2>max-width and min-width</h2>
+        <p>min-width 900px and greater. when lower it reverts to normal.</p>
+        <p>@media screen (min-width: 900px) and (max-width: 1000px)</p>
+        <p>
+          that example only leaves a gap of 100px. So you can target a
+          particular device/viewport.
+        </p>
         <p></p>
       </div>
     </section>
