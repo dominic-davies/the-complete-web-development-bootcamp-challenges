@@ -11,8 +11,7 @@ body {
 }
 
 .container-fluid {
-  /* top, left and right, then bottom */
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
 p {
@@ -86,6 +85,10 @@ h6 {
   text-align: left;
 }
 
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 .title-image {
   right: 30%;
   position: absolute;
@@ -97,7 +100,6 @@ h6 {
 
 #features {
   background-color: #fff;
-  padding: 7% 15%;
   position: relative;
 }
 
@@ -119,7 +121,6 @@ h6 {
 #testimonials {
   background-color: #ef8172;
   color: #fff;
-  /* padding: 7% 15%; */
 }
 
 .testimonial-text {
@@ -166,7 +167,6 @@ h6 {
 #cta {
   background-color: #ff4c68;
   color: #fff;
-  padding: 7% 15%;
 }
 
 .cta-text {
@@ -178,7 +178,6 @@ h6 {
 
 footer {
   background-color: #fff;
-  padding: 7% 15%;
 }
 
 .social-icons i {
