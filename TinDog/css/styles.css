@@ -141,6 +141,10 @@ p {
   padding: 3% 2%;
 }
 
+.no-show {
+  visibility: hidden;
+}
+
 /* CALL TO ACTION */
 
 #cta {
