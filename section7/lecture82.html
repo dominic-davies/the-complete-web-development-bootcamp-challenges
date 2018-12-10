@@ -14,11 +14,15 @@
 
     <style>
       .lecture82 {
-        padding: 0 0 100px;
+        padding: 100px;
       }
 
       hr {
         padding-bottom: 30px;
+      }
+
+      .part2 {
+        background-color: #f7f7f7;
       }
     </style>
   </head>
@@ -39,44 +43,41 @@
 
     <section class="lecture82 part1">
       <div class="container">
-        <h2>Make it responsive.</h2>
+        <h2>Apply styles more specifically by combining selectors</h2>
+        <h3>Very Simple examples</h3>
+        <p>selector1, selector2 {} could be h1, p {color:red}</p>
+        <h3>Hierarchical selectors (spacing is crucial).</h3>
+        <p>selector1 selector2 {}</p>
+        <p>1st is parent then child.</p>
+        <p>example: div h1 {color: red}</p>
         <p>
-          You can do nothing and design a website desktop only but you will be
-          penalised by Google etc.. especially as most people browse when on
-          mobile. A giant company like facebook can do mobile site as well
-          (m.facebook.com) but not feasable for most.So make responsive
-          websites.
+          all the h1's inside a div. This is very broad. So could add (use) a id
+          on the h1 and use a class of the parent. Actually the id might be a
+          bit pointless here as there can be only one on a page which you could
+          just target.
         </p>
-        <p>Can do this using css only: Media Query Breakpoints.</p>
-        <h3>Syntax.</h3>
-        <p>@media (type) (feature)</p>
-        <p>many types like screen, print, speech.</p>
+        <p>example: .container-fluid #title {color: red}</p>
         <p>
-          for screen type we are checking to see what size screen the site is
-          being rendered in.
+          read the hierarchy right to left. so all h1's in a div (above). right
+          is child and parent is left.
         </p>
-        <p>@media screen (min-width: 900px) then change something.</p>
+        <h3>Combined Selectors</h3>
+        <p>selector1.selector2 {}</p>
+        <p>selector1#selector2 {}</p>
         <p>
-          We override the existing code when screen size is 900px and higher.
-        </p>
-        <h3>viewports</h3>
-        <p>
-          You have device width (fixed), browser size which we can change. The
-          viewport is simply the size of the screen your website is being
-          displayed on.
+          They have to occur in the same element. When there is no space we read
+          left to right. h1#title, the h1 that has a id of title. You can't use
+          these with children. Must be directly connected, div.container might
+          be a good way of picturing this as they are always directly related at
+          least in bootstrap.
         </p>
       </div>
     </section>
-    <hr />
+
     <section class="lecture82 part2">
       <div class="container">
-        <h2>max-width and min-width</h2>
-        <p>min-width 900px and greater. when lower it reverts to normal.</p>
-        <p>@media screen (min-width: 900px) and (max-width: 1000px)</p>
-        <p>
-          that example only leaves a gap of 100px. So you can target a
-          particular device/viewport.
-        </p>
+        <h2></h2>
+
         <p></p>
       </div>
     </section>
