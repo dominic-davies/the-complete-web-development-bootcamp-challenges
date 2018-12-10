@@ -17,12 +17,12 @@
         padding: 100px;
       }
 
-      hr {
-        padding-bottom: 30px;
-      }
-
       .part2 {
         background-color: #f7f7f7;
+      }
+
+      .container1 .title {
+        color: red;
       }
     </style>
   </head>
@@ -76,9 +76,16 @@
 
     <section class="lecture82 part2">
       <div class="container">
-        <h2></h2>
+        <h2>Examples</h2>
+        <p>Change the text color to red separately.</p>
+        <p>I already had a container so in examples used container1.</p>
+        <p>.container1 .title { color: red; }</p>
+        <p>targets first sentence</p>
 
-        <p></p>
+        <div class="container1"><h1 class="title">Hello World!</h1></div>
+        <div class="container1-fluid">
+          <h1 class="title">Good Bye World!</h1>
+        </div>
       </div>
     </section>
 
