@@ -294,7 +294,7 @@
           <i class="fab fa-twitter"></i> <i class="fab fa-facebook-f"></i>
           <i class="fab fa-instagram"></i> <i class="fas fa-envelope"></i>
         </div>
-        <p>© Copyright 2018 TinDog</p>
+        <p>© Copyright TinDog <span id="year"></span></p>
       </div>
     </footer>
 
@@ -314,5 +314,9 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+    </script>
   </body>
 </html>
